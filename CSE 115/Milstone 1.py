@@ -13,16 +13,16 @@ def clampValueToRange(value,low,high):
     
 def returnColor(line):
     result_list = []
-    newString = line.replace(" ","")
-    for x in range(0,3):
-        result_list.append(newString[x])
+    newList = line.split()
+    for x in range(3):
+        result_list.append(int(newList[x]))
     return result_list
 
 def returnLocation(line):
     resultList = []
-    newString = line.replace(" ", "")
+    newString = line.split()
     for x in range(len(newString)-1,len(newString)-3,-1):
-        resultList.append(newString[x])
+        resultList.append(int(newString[x]))
         resultList.reverse()
     return resultList
 
