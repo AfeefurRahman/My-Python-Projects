@@ -27,4 +27,3 @@ def computerGuess(y):
         count += 1
     print(f"I have figured out your secret number which is {guess}. Congratulations! And you too {count} tries!")
 
-computerGuess(100000000)
