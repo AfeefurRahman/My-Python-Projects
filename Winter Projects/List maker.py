@@ -9,6 +9,7 @@ def displayTasks(all_tasks):
     print('\nYour tasks: ')
     if len(all_tasks) <= 0:
         print('No Tasks to do!')
+        print('\n')
     else:
         for index,tasks in enumerate(all_tasks):
             print(f'{index+1}: {tasks}')
